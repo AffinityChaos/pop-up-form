@@ -1,0 +1,107 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.bg-model {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    display: none;
+}
+
+.model {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px grey;
+    width: 450px;
+    height: 300px;
+    position: absolute;
+    z-index: 110;
+    top: -1000px;
+    left: 50%;
+    transform: translate(-50%);
+    transition: top 1s ease-in-out;
+    display: flex;
+
+}
+
+.close-btn {
+    cursor: pointer;
+    color: black;
+    font-size: 32px;
+    position: absolute;
+    top: 0;
+    right: 15px;
+}
+
+.model .img {
+    width: 100%;
+    height: 100%;
+}
+
+.model .img img {
+    width: 100%;
+    height: 100%;
+}
+
+.model .form {
+    padding-top: 40px;
+}
+
+.model form {
+    width: 100%;
+    padding: 0 20px 0 0;
+}
+
+.model form input {
+    font-size: 12px;
+    color: #e0e0e0;
+    margin: 6px 0;
+    padding: 4px;
+    width: 100%;
+    border: 1px solid #e0e0e0;
+    outline: none;
+    background-color: transparent;
+}
+
+.model form input[type="submit"] {
+    background-color: tomato;
+    color: #fff;
+    border: none;
+}
+
+.model .form h2 {
+    font-weight: 600;
+    color: tomato;
+}
+
+.call-to-action {
+    background: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    /* height:50vh; */
+    background-color: greenyellow;
+}
+
+.call-to-action a {
+    display: inline-block;
+    padding: 12px 30px;
+    border: none;
+    background-color: tomato;
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.call-to-action a:hover {
+    background-color: bisque;
+}
